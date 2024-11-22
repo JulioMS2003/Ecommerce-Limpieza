@@ -1,0 +1,293 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo del encabezado */
+.header {
+    display: flex;
+    width: 100%;
+    height: 64px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #76CDCD; /* Color azul claro */
+    padding: 10px 20px;
+}
+
+
+/* Logo y subtítulo */
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    font-weight: bold;
+    color: #000;
+    margin-left: 250px;
+    height: 57px;
+}
+
+.logo img {
+    height: 65px; /* Tamaño del logo */
+    margin-right: -22px; /* Espaciado entre la imagen y el texto */
+    margin-top: 15px;
+}
+
+/* Para ajustar la distancia entre el texto */
+.logo .text-container {
+    display: flex;
+    flex-direction: column;
+    
+    gap: 0px; /* Ajusta este valor para cambiar la separación entre CLEANER TEAM y Limpieza del hogar */
+}
+
+.logo span {
+    font-size: 12px;
+    font-weight: normal;
+    color: #555;
+    margin: 0 auto 0 auto;
+    
+}
+
+/* Barra de búsqueda */
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 5px 15px;
+    width: 480px;
+    height: 37px;
+    margin-right: 40px;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 16px;
+    color: #999;
+    background-color: transparent;
+}
+
+.search-bar input::placeholder {
+    color: #999;
+}
+
+.search-bar img {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+}
+
+/* Iconos de sesión y carrito */
+.actions{
+    font-family: roboto;
+    color: rgb(255, 0, 0);
+    margin-right: 350px;
+}
+
+
+.actions ul {
+    list-style: none;
+    /* background: #333; */
+    
+    text-align: center;
+    }
+    .actions ul li {
+    display: inline-block;
+    position: relative;
+    
+    }
+    .actions ul li a {
+    display: block;
+    padding: 20px 25px;
+    /* color: #ffffff; */
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    }
+
+    .actions ul li a i {
+        padding-right: 15px;
+        }
+
+    .actions ul li ul.dropdown li {
+    display: block;
+    /* background: #333; */
+    margin: 2px 0px;
+    }
+    .actions ul li ul.dropdown {
+    width:auto;
+    background: #76CDCD;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    }
+    .actions ul li a:hover {
+    /* background: #222; */
+    }
+    .actions ul li:hover ul.dropdown{
+    display: block;
+    }
+
+/* -----NAV---- */
+
+.navbar {
+    background-color: #f5f5f5; /* Fondo claro */
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    font-weight: 600;
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    gap: 30px; /* Espaciado entre enlaces */
+}
+
+.nav-list li {
+    font-family: 'Courier New', Courier, monospace; /* Estilo de fuente */
+    font-size: 18px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #000; /* Color del texto */
+    transition: color 0.3s ease;
+}
+
+.nav-list a:hover {
+    color: #ffcc00; /* Color resaltado */
+}
+
+
+
+
+
+
+
+.slider-container {
+    margin-top: 25px;
+    width: 1400px;
+    height: 350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 390px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    background-color: #ccc;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 500%; /* Cinco imágenes: ocupa todo el ancho */
+}
+
+.slide {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Oculta cualquier exceso de la imagen */
+    height: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen al contenedor sin deformarla */
+}
+
+button {
+    position: absolute;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 2;
+}
+
+button:hover {
+    color: #000;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.indicators {
+    position: absolute;
+    bottom: 10px; /* Posicionado en la parte inferior del slider */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    z-index: 2; /* Asegura que estén encima de las imágenes */
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    background-color: rgba(255, 255, 255, 0.7); /* Color blanco translúcido */
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dot.active {
+    background-color: #fff; /* Color blanco sólido para el indicador activo */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/index.css">
+    <script src="script.js" defer></script>
+    <title>index</title>
+    
+</head>
+<body>
+
+    <header class="header">
+    <!-- Logo -->
+    <div class="logo">
+        <img src="IMG/encabezado/logo.png" alt="Logo">
+        <div class="text-container">
+            CLEANER TEAM<br>
+            <span>Limpieza del hogar</span>
+        </div>
+    </div>  
+    
+    <!-- Barra de búsqueda -->
+    <div class="search-bar">
+        <img src="https://img.icons8.com/ios-filled/50/000000/search--v1.png" alt="Icono de búsqueda">
+        <input type="text" placeholder="¿Qué estás buscando?">
+    </div>
+
+
+    <!-- Iconos -->
+    <div class="actions">
+        <ul>
+            <li>
+                <a href="#"> <i class="fa-solid fa-user"></i><span>Hola, inicia sesión!</span> &#x25BE;</a>
+                <ul class="dropdown">
+                    <li><a href="#">HTML</a></li>
+                    <li><a href="#">CSS</a></li>
+                    <li><a href="#">JavaScript</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i>&#x25BE;</a>
+                <ul class="dropdown">
+                    <li><a href="#">Carrito</a></li>
+                    <li><a href="#">Carraso</a></li>
+                    <li><a href="#">Paletaso</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    
+    <script src="https://kit.fontawesome.com/befbb378c0.js" crossorigin="anonymous"></script>
+    </header>
+
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#distribuidores">Distribuidores</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <div class="slider-container">
+        <div class="slider">
+            <button class="prev"><i class="fas fa-chevron-left"></i></button>
+            <div class="slides">
+                <div class="slide"><img src="IMG/slider/pri1.jpg" alt="Imagen 1"></div>
+                <div class="slide"><img src="IMG/slider/pri2.jpg" alt="Imagen 2"></div>
+                <div class="slide"><img src="IMG/slider/pri3.jpg" alt="Imagen 3"></div>
+                <div class="slide"><img src="IMG/slider/pri4.jpg" alt="Imagen 4"></div>
+                <div class="slide"><img src="IMG/slider/pri5.jpg" alt="Imagen 5"></div>
+            </div>
+            <button class="next"><i class="fas fa-chevron-right"></i></button>
+            <div class="indicators">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </div>
+
+
+    
+</body>
+</html>
